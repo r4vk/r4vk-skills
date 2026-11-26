@@ -1,0 +1,23 @@
+{
+  "$schema": "https://code.claude.com/schemas/marketplace.json",
+  "name": "r4vk-skills",
+  "owner": {
+    "name": "Rafał Kawęcki",
+    "url": "https://github.com/r4vk"
+  },
+  "description": "Skille Rafała Kawęckiego dla Claude.",
+  "plugins": [
+    {
+      "name": "ulepsz-prompt",
+      "source": "./plugins/ulepsz-prompt",
+      "description": "Zamienia opis celu lub szkic w jasny prompt gotowy do skopiowania. Działa na wyraźną prośbę i nie wykonuje zadania.",
+      "category": "productivity"
+    },
+    {
+      "name": "unslop-pl-en",
+      "source": "./plugins/unslop-pl-en",
+      "description": "Polish and English writing guardrail: removes AI-slop patterns, Polish calques and typography errors, and checks translations PL<->EN against a fact ledger.",
+      "category": "productivity"
+    }
+  ]
+}

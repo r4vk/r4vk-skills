@@ -1,0 +1,28 @@
+name: validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Marketplace structure and version bumps
+        env:
+          BASE: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: |
+          if [ -n "$BASE" ] && git cat-file -e "$BASE^{commit}" 2>/dev/null; then
+            python3 -I scripts/validate.py --base "$BASE"
+          else
+            python3 -I scripts/validate.py
+          fi
+      - name: unslop-pl-en linter tests
+        run: python3 -I -m unittest discover -s plugins/unslop-pl-en/tests -v
