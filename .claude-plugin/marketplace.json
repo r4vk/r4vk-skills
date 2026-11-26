@@ -6,11 +6,14 @@
     "url": "https://github.com/r4vk"
   },
   "description": "Skille Rafała Kawęckiego dla Claude.",
+  "renames": {
+    "ulepsz-prompt": "karpathy-prompt-upgrade"
+  },
   "plugins": [
     {
-      "name": "ulepsz-prompt",
-      "source": "./plugins/ulepsz-prompt",
-      "description": "Zamienia opis celu lub szkic w jasny prompt gotowy do skopiowania. Działa na wyraźną prośbę i nie wykonuje zadania.",
+      "name": "karpathy-prompt-upgrade",
+      "source": "./plugins/karpathy-prompt-upgrade",
+      "description": "Turns a goal description or a draft into a clear, copy-ready prompt. Works on explicit request, does not perform the task and replies in the user's language.",
       "category": "productivity"
     },
     {

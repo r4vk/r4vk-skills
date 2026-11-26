@@ -4,7 +4,7 @@ Marketplace ze skillami dla Claude. Każdy skill to osobny plugin z własną wer
 
 | Plugin | Działanie |
 |---|---|
-| [ulepsz-prompt](plugins/ulepsz-prompt/) | zamienia opis celu w jasny prompt |
+| [karpathy-prompt-upgrade](plugins/karpathy-prompt-upgrade/) | zamienia opis celu w jasny prompt, odpowiada w języku użytkownika |
 | [unslop-pl-en](plugins/unslop-pl-en/) | redakcja PL/EN i weryfikacja tłumaczeń |
 
 ## Instalacja
@@ -14,7 +14,7 @@ Marketplace ze skillami dla Claude. Każdy skill to osobny plugin z własną wer
 **Claude Code:**
 
     /plugin marketplace add r4vk/r4vk-skills
-    /plugin install ulepsz-prompt@r4vk-skills
+    /plugin install karpathy-prompt-upgrade@r4vk-skills
     /plugin install unslop-pl-en@r4vk-skills
 
 Pluginy dodane do konta claude.ai pojawiają się też w Claude Code po zalogowaniu na to konto. Wybierz jedną drogę, żeby uniknąć duplikatów.

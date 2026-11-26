@@ -1,0 +1,17 @@
+{
+  "name": "karpathy-prompt-upgrade",
+  "description": "Turns a goal description or a draft into a clear, copy-ready prompt. Works on explicit request, does not perform the task and replies in the user's language.",
+  "version": "0.2.0",
+  "author": {
+    "name": "Rafał Kawęcki",
+    "url": "https://github.com/r4vk"
+  },
+  "homepage": "https://github.com/r4vk/r4vk-skills",
+  "repository": "https://github.com/r4vk/r4vk-skills",
+  "license": "MIT",
+  "keywords": [
+    "prompt",
+    "prompting",
+    "prompt-engineering"
+  ]
+}

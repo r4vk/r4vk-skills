@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: polish-user
+expected_outcome: |
+  A Polish request gets a reply and a prompt in Polish.
